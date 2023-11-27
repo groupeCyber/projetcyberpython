@@ -25,5 +25,5 @@ class Alerter:
         except ApiException as e:
             print("Exception when calling SMTPApi->send_transac_email: %s\n" % e)
 
-# test = Alerter('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','lenaig.plantec@gmail.com')
+# test = Alerter('','lenaig.plantec@gmail.com')
 # test.send_alert('Alertetest','test')
