@@ -8,12 +8,7 @@ class Alerter:
         self.token = token
         self.email = email
 
-    def send_alert(self,obj, content):
-
-        # print('Alerte envoyée')
-        # print(f'Objet : {obj}')
-        # print(f'Contenu : {content}')
-                
+    def send_alert(self,obj, content):      
         configuration = sib_api_v3_sdk.Configuration()
         configuration.api_key['api-key'] = self.token
 
@@ -27,6 +22,3 @@ class Alerter:
             pprint(api_response)
         except ApiException as e:
             print("Exception when calling SMTPApi->send_transac_email: %s\n" % e)
-
-# test = Alerter('','lenaig.plantec@gmail.com')
-# test.send_alert('Alertetest','test')
