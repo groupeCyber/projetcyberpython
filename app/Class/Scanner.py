@@ -1,9 +1,10 @@
 from scapy.all import *
-import time
+import time, logging
 
 class Scanner:
     def __init__(self, interface):
         self.interface = interface
+        self.logger = logging.getLogger('global')
 
     def scan(self):
         while True:
@@ -14,8 +15,8 @@ class Scanner:
     def logging(self, packets):
         for packet in packets:
             log_entry = self.processing_packet(packet)
-            with open("logs/logs.log", "a") as log_file:
-                log_file.write(log_entry)
+            self.logger.info(log_entry)
+        pass
     
     def processing_packet(self, packet):
         timestamp = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
