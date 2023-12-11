@@ -24,6 +24,10 @@ git clone https://github.com/groupeCyber/projetcyberpython.git
 cd projetcyberpython
 ```
 
+## Configuration
+
+Be sure to have a valid Sendinblue account and API key. You can create a free account [here](https://app.brevo.com/).
+
 ## Usage
 
 To run the Intrusion Detection System, navigate to the `app` folder and execute `main.py`:
