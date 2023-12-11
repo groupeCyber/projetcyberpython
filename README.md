@@ -24,10 +24,6 @@ git clone https://github.com/groupeCyber/projetcyberpython.git
 cd projetcyberpython
 ```
 
-## Configuration
-
-Before running the application, make sure to configure the necessary settings in the `config.py` file (create this file in the root directory if it doesn't exist). This includes setting up API keys and other relevant parameters.
-
 ## Usage
 
 To run the Intrusion Detection System, navigate to the `app` folder and execute `main.py`:
