@@ -1,5 +1,4 @@
 from __future__ import print_function
-import time
 import sib_api_v3_sdk
 from sib_api_v3_sdk.rest import ApiException
 from pprint import pprint
