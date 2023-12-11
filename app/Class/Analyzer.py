@@ -45,7 +45,7 @@ class Analyzer:
                 dst_port = packet[TCP].dport if TCP in packet else packet[UDP].dport
                 src_ip_to_ports.setdefault(src_ip, set()).add(dst_port)
         for src_ip, ports in src_ip_to_ports.items():
-            if len(ports) >= 1:
+            if len(ports) > 3:
                 info = f"Port scan detected from {src_ip} to {ports}"
                 suspicious.append(info)
                 self.logger.warning(info)

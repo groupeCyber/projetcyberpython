@@ -38,4 +38,4 @@ class Scanner:
         elif ICMP in packet:
             proto = "ICMP"
             src_port, dst_port = "-", "-"
-        return f"{timestamp} | Protocol: {proto} | Source IP: {src_ip} | Destination IP: {dst_ip} | Source Port: {src_port} | Destination Port: {dst_port}\n"
+        return f"{timestamp} | Protocol: {proto} | Source IP: {src_ip} | Destination IP: {dst_ip} | Source Port: {src_port} | Destination Port: {dst_port}"
