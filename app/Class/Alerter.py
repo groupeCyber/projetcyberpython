@@ -9,6 +9,10 @@ class Alerter:
         self.email = email
 
     def send_alert(self,obj, content):
+
+        # print('Alerte envoyée')
+        # print(f'Objet : {obj}')
+        # print(f'Contenu : {content}')
                 
         configuration = sib_api_v3_sdk.Configuration()
         configuration.api_key['api-key'] = self.token
